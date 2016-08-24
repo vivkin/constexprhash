@@ -1,7 +1,7 @@
-meowmeow: meowmeow.cpp
-	${CXX} -std=c++11 -O3 -Wall -Wextra meowmeow.cpp -o meowmeow
+meowmeow: meowmeow.cpp constexprhash.h
+	${CXX} -std=c++11 -g -Wall -Wextra meowmeow.cpp -o meowmeow
 
 clean:
-	rm meowmeow
+	rm -f meowmeow
 
 all: meowmeow
